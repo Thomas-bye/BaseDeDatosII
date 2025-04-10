@@ -1,6 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-  
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
 
-  
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .boton-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .btn-semana {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .btn-semana:hover {
+            transform: scale(1.05);
+            background-color: #45a049;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDO A MI PAGINA WEB</h1>
+    </header>
+
+    <div class="boton-galeria" id="galeriaBotones">
+        <!-- Los botones se agregarán aquí dinámicamente -->
+    </div>
+
+    <footer>
+        <p>contactos</p>
+    </footer>
+
+    <script>
+        // Función para crear un nuevo botón
+        function crearBoton(numeroSemana) {
+            const boton = document.createElement('button');
+            boton.className = 'btn-semana';
+            boton.textContent = `Semana${numeroSemana}`;
+            return boton;
+        }
+
+        // Función para agregar un nuevo botón a la galería
+        function agregarBoton() {
+            const galeria = document.getElementById('galeriaBotones');
+            const numeroSemana = galeria.children.length + 1;
+            const nuevoBoton = crearBoton(numeroSemana);
+            galeria.appendChild(nuevoBoton);
+        }
+
+        // Agregar primer botón al cargar la página
+        window.onload = agregarBoton;
+
+        // Configurar intervalo para agregar nuevos botones cada segundo
+        setInterval(agregarBoton, 1000);
+    </script>
+</body>
 </html>

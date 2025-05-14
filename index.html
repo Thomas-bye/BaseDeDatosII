@@ -2,83 +2,56 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Interfaz de Semanas</title>
-    <style>
-        body {
-            background-color: #666;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            color: white;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .button {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background-color: #2ff60c;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            transition: transform 0.2s, background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #071af6;
-            transform: scale(1.05);
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 50px;
-            font-size: 14px;
-            font-weight: bold;
-            color: white;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
-                <img src="https://www.google.com/imgres?q=presentacion%20personal&imgurl=https%3A%2F%2Fcursofuturosresidentes.com%2Fwp-content%2Fuploads%2F2021%2F09%2FWhatsApp-Image-2021-09-04-at-8.40.51-AM-1.jpeg&imgrefurl=https%3A%2F%2Fcursofuturosresidentes.com%2Fmejora-tu-presentacion-personal-para-tu-entrevista-de-admision-con-estos-tips%2F&docid=OjSyGUwqRuiD7M&tbnid=6BaZNn2WguGPVM&vet=12ahUKEwjute-51duMAxUMLrkGHRy0PdAQM3oECG4QAA..i&w=1280&h=854&hcb=2&ved=2ahUKEwjute-51duMAxUMLrkGHRy0PdAQM3oECG4QAA" alt="foto de perfil">
-            </div>
-            <div>
-                <hi>Bienvenido</hi>
-                <p>Hola..! Mi nombre es Thomas Tiraccaya Castillon
-                , soy estudiante de la universidad Peruna Los Andes 
-                estudio la carreta de Ingenieria de Sistemas y computación 
-                , soy universitario, tengo objetivos de terminar mi carreara,
-                me gusta el futbol jugar y ver, soy muy bueno bailando..</p> 
+     <!--Sección INICIO-->
+     <section id="inicio" class="inicio">
+        <div class="contenido">
+            <header>
+                <div class="logo">
+                    <i class="fa-brands fa-codepen"></i>
+                    <h1>Thomas</h1>
+                </div>
+                <nav id="nav">
+                    <a href="#inicio"></a><a href="#servicios"></a><a href="#habilidades"></a><a href="#trabajos"></a><a href="#contacto"></a>
+                </nav>
+                <!-- Icono del menu responsivo-->
+                 <div id="icono-nav">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
+                 <div class="redes">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                 </div>
+            </header>
+            <div class="fila">
+                 <div class="col">
+                    <h2>Desarrollador fullstack</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure expedita, laboriosam harum.</p>
+                    <button class="btn btn-1">Descargar CV (--)</button>
+                 </div>
+                 <div class="col">
+                    <div class="contenedor-img
+                    ">
+                    <img src="img/foto-inicio.png" alt="">
+                    </div>
+
+                 </div>
             </div>
         </div>
-        
-    </header>
-    <secction>
-        <div class="container">
-            <!-- Generar 18 botones -->
-            <a href="https://www.canva.com/design/DAGjiTIDUJI/rzl7rjR2-c_rX0EJ133azg/edit?utm_content=DAGjiTIDUJI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="button"  target="_blank">Semana 1</a>
-            <a href="https://www.canva.com/design/DAGjniBodwI/yDv_lgMr6_pcPIuMNM6FGQ/edit" class="button"  target="_blank">Semana 2</a>
-            <a href="https://thomas-bye.github.io/BaseDeDatosII/" class="button"  target="_blank">Semana 3</a>
-            <a href="https://www.google.com.pe/?hl=es" class="button"  target="_blank">Semana 4</a>
-            <a href="https://www.google.com.pe/?hl=es" class="button"  target="_blank">Semana 5</a>
-        </div>
-    </secction>
-    
-    
+     </section>
+     <main>
+        <section id="gallery">
+            <!-- Aquí se cargarán las tareas dinámicamente -->
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
+<footer>
+   
+</footer>
 </html>
-                    
